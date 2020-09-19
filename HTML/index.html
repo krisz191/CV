@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Smarter in Sports</title>
+
+    <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/nature/nat-1/nat9.ani), url(http://cur.cursors-4u.net/nature/nat-1/nat9.png), auto !important;}</style><a href="http://www.cursors-4u.com/cursor/2005/04/18/nat9-10.html" target="_blank" title="Yellow Dinosaur"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Yellow Dinosaur" style="position:absolute; top: 0px; right: 0px;" /></a>
+        
+    <style> #div1 {
+          width: 350px;
+          height: 70px;
+          padding: 10px;
+          border: 1px solid #aaaaaa;
+        }
+        </style>
+        <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+        </script>
+
+</head>
+<body>
+    <h1>Krisztián Gyuró</h1>
+    <img src="../Assets/Images/Landing/CV.png" alt="Girl in a jacket" width="250" height="300">
+    <h2>Sports Innovation Consultant</h2>
+    <br>
+    <h3>Eindhoven, The Netherlands</h3>
+<br>
+<p>Krisztián is a young energetic sports tech entrepreneur
+    <br>
+with a demonstrated experience in football innovation. 
+<br>His diverse professional experience has allowed him to help those who seek to smarten up their 
+<br>training capabilities by investing in hardware and software solutions.
+<br>Ngl, Krisz is also fashionable AF.
+
+</p>
+
+<h4>Want to smarten up the way you train? Ask for a free consultation from Krisz</h4>
+
+<form action="mailto:krisztian@smartgoals.nl" method="post" enctype="text/plain">
+Name:<br>
+<input type="text" name="name"><br>
+E-mail:<br>
+<input type="text" name="mail"><br>
+Club name:<br>
+<input type="text" name="comment" size="50"><br><br>
+
+<input type="checkbox">
+
+<label for="vehicle1"> <strong> <u>I agree on Billionaire CEO B.V. processing my Data. </u> </strong> </label><br>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+
+</form>
+
+<br>
+
+<h4>Y'all already kno whataya want 2 buy?</h4>
+
+
+<p>Drag dem SmartGoals in 2 yo basket B. </p>
+
+<img id="drag1" src="../Assets/Images/Landing/smartgoals.jpg" draggable="true" ondragstart="drag(event)" width="536" height="390">
+<br>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+
+
+</body>
+</html>
